@@ -5,8 +5,8 @@ import { Context } from "../store/appContext";
 
 import "../../styles/demo.css";
 
-export const Demo = () => {
-	const { store, actions } = useContext(Context);
+export const Demo = () => {//importacion destructurada:
+	const { store, actions } = useContext(Context); //hook useContext
 
 	return (
 		<div className="container">
@@ -17,7 +17,7 @@ export const Demo = () => {
 							key={index}
 							className="list-group-item d-flex justify-content-between"
 							style={{ background: item.background }}>
-							<Link to={"/single/" + index}>
+							<Link to={"/single/" + index}> {/*Paso 2: configurar la etiqueta link hacia la ruta dinamica*/}
 								<span>Link to: {item.title}</span>
 							</Link>
 							{// Conditional render example

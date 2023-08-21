@@ -9,8 +9,7 @@ import "../styles/index.css";
 import Layout from './layout.js'
 
 //
-const root = createRoot(document.querySelector("#app"))
+const root = createRoot(document.querySelector("#app")) //createRoot en vez de reactDom
 
 //render your react application
 root.render(<Layout/>)
-
